@@ -1,14 +1,12 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts/app')
 
-        <title> {{config('app.name', 'Blog App')}} </title>
-        
-    </head>
-    <body>
-        <h1>Welcome to Blog</h1>
-        <p>This is a blog made with Laravel</p>
-    </body>
-</html>
+@section('content')
+    <div class="jumbotron text-center">
+        <h1>{{$title}}</h1>
+        <p>This is my first Laravel App</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="/login">Login</a>
+            <a class="btn btn-primary btn-lg" href="/register">Register</a>
+        </p>
+    </div>
+@endsection
