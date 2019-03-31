@@ -12,6 +12,7 @@
     <body>
         @include('layouts/navbar')
         <div class="container">
+            @include('layouts/message')
             @yield('content')
         </div>
     </body>
